@@ -1,0 +1,118 @@
+html {
+    font-size: 10px;
+    text-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 239, 239);
+    color: #333;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+
+.form{
+    margin: 0 auto;
+    max-width:2000px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(32, 29, 29);
+    box-shadow: 10px 5px 15px #111111c0;
+    display:grid;
+    
+}
+
+.label {
+    color: rgb(248, 244, 244);
+    font-size: 3.2rem ;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+    
+}
+
+.input {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    line-height: 2.8rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin: 1rem 4rem;
+}
+
+.button {
+    margin: 0.2rem 3rem;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(10, 10, 10, 0.75);
+    border-radius: 20px;
+    font-size: 1 rem;
+    cursor: pointer;
+    transition: 350ms;  
+}
+
+.button:hover {
+    background-color: rgba(0,0,0,0.85);
+}
+
+@media (min-width:786px){
+    .form {
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1rem;
+        align-items: center;
+    }
+    
+    .input {
+        margin-bottom: 0;
+    }
+}
+
+.post-list {
+    margin-top: 4rem;
+    display: block;
+    max-width: 2000px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding: 30px 1px;
+    background: url(https://images.unsplash.com/photo-1490814525860-594e82bfd34a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60) ;
+    border: 2px solid #f8f6f5;
+    border-radius: 12px;
+    box-shadow: 10px 5px 8px #e6f0f0c0;
+}
+
+.post-item {
+    padding:2rem 2rem;
+    border-radius: 20px;
+    box-shadow: 10px 2px 5px rgba(250, 250, 250, 0.25);
+    margin-bottom: 2rem;
+    color: white;
+    background-color:rgb(27, 25, 25);opacity:0.6;
+    display: block;
+    cursor: pointer;
+   
+}
+
+.post-item:hover {
+    background-color: rgba(209, 199, 199, 0.85);
+    color: rgb(29, 27, 27);
+}
+
+
+.post--title {
+    margin:auto;
+    font-size: 2.2rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
